@@ -98,6 +98,11 @@
   >   first_<model_name> = <Model_name>.query.first()
   >   print(f'✅ {first_<model_name>}')
   >   return jsonify(<model_name>=first_<model_name>)
+  THEN
+  > @app.route('/')
+  > def home():
+  >   first_<model_name> = []
+  >   return jsonify(<model_name>=first_<model_name>.as_dict() if first_<model_name> else 'No <model_name>s!')
 
 6) Finish Making your routes in your api.py
 
