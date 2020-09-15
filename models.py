@@ -26,7 +26,18 @@ class Token(db.Model):
   token_border = db.Column(db.String, nullable=False)
 
   def __repr__(self):
-    return f'Token(id={self.id}, name={self.name}, skin_color={self.skin_color}, eye_color={self.eye_color}, nose={self.nose}, mouth={self.mouth}, hair={self.hair}, facial_hair={self.facial_hair}, hair_color={self.hair_color}, item={self.item}, token_color={self.token_color}, token_border={self.token_border})'
+    return f'Token(id={self.id},\
+    name={self.name},\ 
+    skin_color={self.skin_color},\
+    eye_color={self.eye_color},\
+    nose={self.nose},\
+    mouth={self.mouth},\
+    hair={self.hair},\
+    facial_hair={self.facial_hair},\
+    hair_color={self.hair_color},\
+    item={self.item},\
+    token_color={self.token_color},\
+    token_border={self.token_border})'
 
   def as_dict(self):
     return {c.name: getattr(self, c.name) for c in self.__table__.columns}

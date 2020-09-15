@@ -12,3 +12,28 @@ def get_token(id):
       return jsonify(token.as_dict())
     else:
       raise Exception('Error getting token at {}'.format(id))
+
+def create_token(**form_kwargs):
+  new_token = Token(**form_kwargs)
+  db.session.add(new_token)
+  db.session.commit()
+  return jsonify(new_token.as_dict())
+
+def update_token(id, **update_values):
+  token = Token.query.get(id)
+  if token:
+    for key, value in update_values.items():
+      setattr(token, key, value)
+    db.session.commit()
+    return jsonify(token.as_dict())
+  else:
+    raise Exception('No Token at id {}'.format(id))
+
+def destroy_token(id):
+  token = Token.query.get(id)
+  if token:
+    db.session.delete(token)
+    db.session.commit()
+    return redirect('/tokens')
+  else:
+    raise Exception('No Token at id {}'.format(id))
