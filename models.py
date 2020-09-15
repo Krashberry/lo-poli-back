@@ -17,6 +17,7 @@ class Token(db.Model):
   skin_color = db.Column(db.String, nullable=False)
   eye_color = db.Column(db.String, nullable=False)
   nose = db.Column(db.String, nullable=False)
+  eyes = db.Column(db.String, nullable=False)
   mouth = db.Column(db.String, nullable=False)
   hair = db.Column(db.String, nullable=False)
   facial_hair = db.Column(db.String, nullable=False)
@@ -27,10 +28,11 @@ class Token(db.Model):
 
   def __repr__(self):
     return f'Token(id={self.id},\
-    name={self.name},\ 
+    name={self.name},\
     skin_color={self.skin_color},\
     eye_color={self.eye_color},\
     nose={self.nose},\
+    eyes={self.eyes},\
     mouth={self.mouth},\
     hair={self.hair},\
     facial_hair={self.facial_hair},\

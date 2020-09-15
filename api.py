@@ -1,4 +1,4 @@
-from flask import jsonify, request, send_file
+from flask import jsonify, request
 from models import app, Token
 from crud.token_crud import get_all_tokens, get_token, create_token, update_token, destroy_token
 
