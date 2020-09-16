@@ -192,3 +192,12 @@ tokens = Token(
   token_color = "#8ece9c",
   token_border = "#ffa500",
   )
+
+## REFACTORIFY
+
+- Wherever you see jsonify we need to be changing it to --> render_template, and including whatever the data that is being returned [likley to be the Token/token info]
+
+> def get_all_tokens():
+>   all_tokens = Token.query.all()
+>   results = [token.as_dict() for token in all_tokens] 
+>   return render_template("tokens_list.html", results=results)
