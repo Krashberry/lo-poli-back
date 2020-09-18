@@ -1,0 +1,11 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  background-color: grey;
+}
+
+#show_pics {
+  border: 2px solid red;
+  width: 20px;
+  height: 30px;
+}

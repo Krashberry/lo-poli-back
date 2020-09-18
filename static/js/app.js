@@ -1,4 +1,4 @@
-let showPic = document.getElementById("show_pic")
+let showPic = document.getElementById("show_pics")
 let sColor = document.getElementById("s_color")
 let eyes = document.getElementById("eyes")
 let eColor = document.getElementById("e_color")
@@ -13,6 +13,7 @@ let tColor = document.getElementById("t_color")
 let tBorder = document.getElementById("t_border")
 
 sColor.addEventListener("change", e => {
+  console.log(showPic)
   showPic.innerHTML = e.target.value
   console.log(e.target.value)  
 });
