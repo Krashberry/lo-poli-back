@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static/app.js')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
@@ -19,10 +19,11 @@ class Token(db.Model):
   nose = db.Column(db.String, nullable=False)
   eyes = db.Column(db.String, nullable=False)
   mouth = db.Column(db.String, nullable=False)
-  hair = db.Column(db.String, nullable=False)
-  facial_hair = db.Column(db.String, nullable=False)
-  hair_color = db.Column(db.String, nullable=False)
-  item = db.Column(db.String, nullable=False)
+  hair = db.Column(db.String, nullable=True)
+  facial_hair = db.Column(db.String, nullable=True)
+  fh_color = db.Column(db.String, nullable=True)
+  hair_color = db.Column(db.String, nullable=True)
+  item = db.Column(db.String, nullable=True)
   token_color = db.Column(db.String, nullable=False)
   token_border = db.Column(db.String, nullable=False)
 
@@ -36,6 +37,7 @@ class Token(db.Model):
     mouth={self.mouth},\
     hair={self.hair},\
     facial_hair={self.facial_hair},\
+    fh_color={self.fh_color},\
     hair_color={self.hair_color},\
     item={self.item},\
     token_color={self.token_color},\

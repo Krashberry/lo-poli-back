@@ -2,21 +2,28 @@
 
 {% block content %}
 
-{% for result in results %}
+{% if result %}
 
-<h1> {{ result.name }} </h1>
+{{ result.name }}
 {{ result.skin_color }}
-{{ result.eyes }}
 {{ result.eye_color }}
 {{ result.nose }}
+{{ result.eyes }}
 {{ result.mouth }}
 {{ result.hair }}
-{{ result.hair_color }}
 {{ result.facial_hair }}
+{{ result.fh_color }}
+{{ result.hair_color }}
 {{ result.item }}
 {{ result.token_color }}
 {{ result.token_border }}
 
-{% endfor %}
+<!-- Share/Download Buttons -->
 
+{% else %}
+
+<p> 404: No Token to display :( </p>
+
+{% endif %}
+<!-- Back Button -->
 {% endblock %}

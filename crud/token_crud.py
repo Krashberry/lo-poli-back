@@ -1,4 +1,4 @@
-from flask import jsonify, render_template, redirect
+from flask import Flask, jsonify, render_template, redirect
 from models import db, Token
 
 def get_all_tokens():
@@ -9,7 +9,8 @@ def get_all_tokens():
 def get_token(id):
     token = Token.query.get(id)
     if token:
-      return jsonify(token.as_dict())
+      result = token.as_dict()
+      return render_template("token_detail.html", result=result)
     else:
       raise Exception('Error getting token at {}'.format(id))
 
@@ -17,7 +18,7 @@ def create_token(**form_kwargs):
   new_token = Token(**form_kwargs)
   db.session.add(new_token)
   db.session.commit()
-  return jsonify(new_token.as_dict())
+  return redirect(f'/tokens/{new_token.id}')
 
 def update_token(id, **update_values):
   token = Token.query.get(id)

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Create Token</h1>
+<form action="/tokens" method="POST" class="token_form">
+  <label for="name">Name</label><br>
+  <input type="text" id="t_name" name="name"><br>
+
+  <label for="skin_color">Skin Color</label><br>
+  <select id="s_color" name="skin_color"><br>
+    <option value="dark">Dark</option>
+    <option value="m_dark">Medium_Dark</option>
+    <option value="med">Medium</option>
+    <option value="m_light">Medium_Light</option>
+    <option value="light">Light</option><br>
+  </select><br>
+
+  <label for="eyes">Eyes</label><br>
+  <select id="eyes" name="eyes"><br>
+    <option value="x_large">Extra Large</option>
+    <option value="large">Large</option>
+    <option value="average">Average</option>
+    <option value="small">Small</option>
+    <option value="dots">Dots</option>
+    <option value="slashes">Slashes</option>
+    <option value="rage">Enraged</option>
+    <option value="circ">Circles</option>
+  </select><br>
+
+  <label for="eye_color">Eye Color</label><br>
+  <select id="e_color" name="eye_color"><br>
+    <option value="brown">Brown</option>
+    <option value="hazel">Hazel</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="grey">Grey</option>
+    <option value="white">White</option>
+  </select><br>
+
+  <label for="nose">Nose</label><br>
+  <select id="nose" name="nose"><br>
+    <option value="x_wide">Extra Wide</option>
+    <option value="wide">Wide</option>
+    <option value="med">Medium</option>
+    <option value="slim">Slim</option>
+    <option value="tiny">Tiny</option>
+    <option value="snake">Snake</option>
+    <option value="none">None</option>
+  </select><br>
+
+  <label for="mouth">Mouth</label><br>
+  <select id="mouth" name="mouth"><br>
+    <option value="x_wide">Extra Wide</option>
+    <option value="wide">Wide</option>
+    <option value="med">Medium</option>
+    <option value="slim">Slim</option>
+    <option value="tiny">Tiny</option>
+    <option value="fangs">Fangs</option>
+    <option value="orc">Orcish</option>
+    <option value="gap">Gap</option>
+    <option value="dot">Dot</option>
+    <option value="frown">Frown</option>
+    <option value="none">None</option>
+  </select><br>
+
+  <label for="hair">Hair</label><br>
+  <select id="hair" name="hair"><br>
+    <option value="l_fro">Long Afro</option>
+    <option value="m_fro">Medium Afro</option>
+    <option value="s_fro">Short Afro</option>
+    <option value="l_wav">Long Waves</option>
+    <option value="m_wav">Medium Waves</option>
+    <option value="s_wav">Short Waves</option>
+    <option value="l_str8">Long Straight</option>
+    <option value="m_str8">Medium Straight</option>
+    <option value="s_str8">Short Straight</option>
+    <option value="puf">Puffs</option>
+    <option value="pig">Pigtails</option>
+    <option value="dbl">Double Braids</option>
+    <option value="bun">Bun</option>
+    <option value="fd">Fade</option>
+    <option value="ft">Flat-Top</option>
+    <option value="bld">Bald</option>
+  </select><br>
+
+  <label for="hair_color">Hair Color</label><br>
+  <select id="h_color" name="hair_color"><br>
+    <option value="black">Black</option>
+    <option value="d-br">Dark Brown</option>
+    <option value="br">Brown</option>
+    <option value="l-br">Light Brown</option>
+    <option value="ginga">Ginger</option>
+    <option value="d-blnd">Dirty Blonde</option>
+    <option value="stw-blnd">Strawberry Blonde</option>
+    <option value="blnda">Blonde</option>
+    <option value="hny-blnda">Honey Blonde</option>
+    <option value="ash-blnda">Ashe Blonde</option>
+    <option value="p-blnda">Platinum Blonde</option>
+    <option value="nonea">None</option>
+  </select><br>
+
+  <label for="facial_hair">Facial Hair</label><br>
+  <select id="f_hair" name="facial_hair"><br>
+    <option value="full">Full</option>
+    <option value="med">Medium</option>
+    <option value="sm">Small</option>
+    <option value="got">Goatee</option>
+    <option value="must">Moustache</option>
+    <option value="sp">Soul Patch</option>
+    <option value="none">None</option>
+  </select><br>
+
+  <label for="fh_color">Facial Hair Color</label><br>
+  <select id="fhc" name="fh_color"><br>
+    <option value="full">Full</option>
+    <option value="med">Medium</option>
+    <option value="sm">Small</option>
+    <option value="got">Goatee</option>
+    <option value="must">Moustache</option>
+    <option value="sp">Soul Patch</option>
+    <option value="none">None</option>
+  </select><br>
+
+  <label for="item">Item</label><br>
+  <select id="item" name="item"><br>
+    <option value="glas">Glasses</option>
+    <option value="b_hat">Biking Hat</option>
+    <option value="hoops">Hoops</option>
+    <option value="n_ring">Nosering</option>
+    <option value="sept">Septum Piercing</option>
+    <option value="sweat">Sweat Drop</option>
+    <option value="annoy">Annoyed Marker</option>
+    <option value="none">None</option>
+  </select><br>
+
+  <label for="token_color">Token Color</label><br>
+  <select id="t_color" name="token_color"><br>
+    <option value="blk">Black</option>
+    <option value="gry">Grey</option>
+    <option value="frn">Green</option>
+    <option value="blu">Blue</option>
+    <option value="purp">Purple</option>
+    <option value="red">Red</option>
+    <option value="org">Orange</option>
+    <option value="yel">Yellow</option>
+    <option value="whi">White</option>
+  </select><br>
+
+  <label for="token_border">Token Border</label><br>
+  <select id="t_border" name="token_border"><br>
+    <option value="blk">Black</option>
+    <option value="gry">Grey</option>
+    <option value="frn">Green</option>
+    <option value="blu">Blue</option>
+    <option value="purp">Purple</option>
+    <option value="red">Red</option>
+    <option value="org">Orange</option>
+    <option value="yel">Yellow</option>
+    <option value="wht">White</option>
+  </select><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<!-- Divs For PNGs -->
+<div id="show_pics"></div>
+{% endblock %}
