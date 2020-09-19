@@ -1,4 +1,6 @@
 let showPic = document.getElementById("show_pics")
+// add refs for the image tags 
+let sknPic = document.getElementById("s_color_1")
 let sColor = document.getElementById("s_color")
 let eyes = document.getElementById("eyes")
 let eColor = document.getElementById("e_color")
@@ -7,15 +9,13 @@ let mouth = document.getElementById("mouth")
 let hair = document.getElementById("hair")
 let hColor = document.getElementById("h_color")
 let fHair = document.getElementById("f_hair")
-let fhColor = document.getElementById("fh_color")
+let fhColor = document.getElementById("fhc")
 let item = document.getElementById("item")
 let tColor = document.getElementById("t_color")
 let tBorder = document.getElementById("t_border")
 
 sColor.addEventListener("change", e => {
-  console.log(showPic)
-  showPic.innerHTML = e.target.value
-  console.log(e.target.value)  
+  sknPic.setAttribute("src", "https://placedog.net/20")
 });
 
 eyes.addEventListener("change", e => {

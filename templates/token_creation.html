@@ -45,7 +45,7 @@
     <option value="slim">Slim</option>
     <option value="tiny">Tiny</option>
     <option value="snake">Snake</option>
-    <option value="none">None</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="mouth">Mouth</label><br>
@@ -60,7 +60,7 @@
     <option value="gap">Gap</option>
     <option value="dot">Dot</option>
     <option value="frown">Frown</option>
-    <option value="none">None</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="hair">Hair</label><br>
@@ -96,7 +96,7 @@
     <option value="hny-blnda">Honey Blonde</option>
     <option value="ash-blnda">Ashe Blonde</option>
     <option value="p-blnda">Platinum Blonde</option>
-    <option value="nonea">None</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="facial_hair">Facial Hair</label><br>
@@ -107,18 +107,23 @@
     <option value="got">Goatee</option>
     <option value="must">Moustache</option>
     <option value="sp">Soul Patch</option>
-    <option value="none">None</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="fh_color">Facial Hair Color</label><br>
   <select id="fhc" name="fh_color"><br>
-    <option value="full">Full</option>
-    <option value="med">Medium</option>
-    <option value="sm">Small</option>
-    <option value="got">Goatee</option>
-    <option value="must">Moustache</option>
-    <option value="sp">Soul Patch</option>
-    <option value="none">None</option>
+    <option value="black">Black</option>
+    <option value="d-br">Dark Brown</option>
+    <option value="br">Brown</option>
+    <option value="l-br">Light Brown</option>
+    <option value="ginga">Ginger</option>
+    <option value="d-blnd">Dirty Blonde</option>
+    <option value="stw-blnd">Strawberry Blonde</option>
+    <option value="blnda">Blonde</option>
+    <option value="hny-blnda">Honey Blonde</option>
+    <option value="ash-blnda">Ashe Blonde</option>
+    <option value="p-blnda">Platinum Blonde</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="item">Item</label><br>
@@ -130,7 +135,7 @@
     <option value="sept">Septum Piercing</option>
     <option value="sweat">Sweat Drop</option>
     <option value="annoy">Annoyed Marker</option>
-    <option value="none">None</option>
+    <option value="null">None</option>
   </select><br>
 
   <label for="token_color">Token Color</label><br>
@@ -163,5 +168,10 @@
 </form>
 
 <!-- Divs For PNGs -->
-<div id="show_pics"></div>
+<div id="show_pics">
+  <!-- point to pics in asset folder -->
+  <img id="s_color_1" src="https://placedog.net/10" alt="">
+  <!-- <img id="s_color_2" src="https://placedog.net/20" alt=""> -->
+  <!-- <img id="s_color_3" src="https://placedog.net/30" alt=""> -->
+</div>
 {% endblock %}

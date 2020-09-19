@@ -1,5 +1,14 @@
 body {
   display: grid;
-  place-items: center;
-  background-color: grey;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
