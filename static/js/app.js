@@ -1,4 +1,4 @@
-let showPic = document.getElementById("show_pics")
+// let showPic = document.getElementById("show_pics")
 // add refs for the image tags 
 let sknPic = document.getElementById("s_color_1")
 let sColor = document.getElementById("s_color")
@@ -15,7 +15,20 @@ let tColor = document.getElementById("t_color")
 let tBorder = document.getElementById("t_border")
 
 sColor.addEventListener("change", e => {
-  sknPic.setAttribute("src", "https://placedog.net/20")
+  let sColorElement = document.querySelector("#s_color").value
+  console.log(sColor.value)
+  if (sColorElement == "dark"){
+    sknPic.setAttribute("src", "../assets/tokens/skintones/dark.jpg")
+    console.log(sColor.value)
+  }
+  else if (sColorElement == "m_dark"){
+    sknPic.setAttribute("src", "../assets/tokens/skintones/m_dark.jpg")
+    console.log(sColor.value)
+  }
+  else if (sColorElement == "med"){
+    sknPic.setAttribute("src", "../assets/tokens/skintones/medium.jpg")
+    console.log(sColor.value)
+  }
 });
 
 eyes.addEventListener("change", e => {
