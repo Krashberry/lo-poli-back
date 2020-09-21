@@ -1,11 +1,36 @@
 {% extends 'base.html' %}
 <link rel="stylesheet" href="../static/css/token_creation.css">
-<link rel="import" href="../static/assets/images/skintones/">
 {% block content %}
 <h1>Create Token</h1>
 <form action="/tokens" method="POST" class="token_form">
   <label for="name">Name</label><br>
   <input type="text" id="t_name" name="name"><br>
+
+  <label for="token_color">Token Color</label><br>
+  <select id="t_color" name="token_color"><br>
+    <option value="blk">Black</option>
+    <option value="gry">Grey</option>
+    <option value="frn">Green</option>
+    <option value="blu">Blue</option>
+    <option value="purp">Purple</option>
+    <option value="red">Red</option>
+    <option value="org">Orange</option>
+    <option value="yel">Yellow</option>
+    <option value="whi">White</option>
+  </select><br>
+
+  <label for="token_border">Token Border</label><br>
+  <select id="t_border" name="token_border"><br>
+    <option value="blk">Black</option>
+    <option value="gry">Grey</option>
+    <option value="frn">Green</option>
+    <option value="blu">Blue</option>
+    <option value="purp">Purple</option>
+    <option value="red">Red</option>
+    <option value="org">Orange</option>
+    <option value="yel">Yellow</option>
+    <option value="wht">White</option>
+  </select><br>
 
   <label for="skin_color">Skin Color</label><br>
   <select id="s_color" name="skin_color"><br>
@@ -139,39 +164,35 @@
     <option value="null">None</option>
   </select><br>
 
-  <label for="token_color">Token Color</label><br>
-  <select id="t_color" name="token_color"><br>
-    <option value="blk">Black</option>
-    <option value="gry">Grey</option>
-    <option value="frn">Green</option>
-    <option value="blu">Blue</option>
-    <option value="purp">Purple</option>
-    <option value="red">Red</option>
-    <option value="org">Orange</option>
-    <option value="yel">Yellow</option>
-    <option value="whi">White</option>
-  </select><br>
-
-  <label for="token_border">Token Border</label><br>
-  <select id="t_border" name="token_border"><br>
-    <option value="blk">Black</option>
-    <option value="gry">Grey</option>
-    <option value="frn">Green</option>
-    <option value="blu">Blue</option>
-    <option value="purp">Purple</option>
-    <option value="red">Red</option>
-    <option value="org">Orange</option>
-    <option value="yel">Yellow</option>
-    <option value="wht">White</option>
-  </select><br>
-
   <input type="submit" value="Submit">
 </form>
 
 <!-- Divs For Images -->
 <div id="show_pics">
   <!-- point to pics in your bucket -->
-  <img id="s_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.jpg",  alt=""></img>
-  <img id="eyes_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.jpg",  alt=""></img>
+  <img id="t_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/blk.png",  alt=""></img>
+
+  <img id="t_border_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/blk.png",  alt=""></img>
+
+  <img id="s_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.png",  alt=""></img>
+
+  <img id="eyes_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/x_large.png",  alt=""></img>
+
+  <img id="e_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/brown.png",  alt=""></img>
+
+  <img id="nose_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/x_wide.png",  alt=""></img>
+  
+  <img id="mouth_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/x_wide.png",  alt=""></img>
+
+  <img id="hair_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/l_fro.png",  alt=""></img>
+
+  <img id="h_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/black.png",  alt=""></img>
+  
+  <img id="f_hair_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.png",  alt=""></img>
+
+  <img id="fhc_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.png",  alt=""></img>
+
+  <img id="item_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/dark.png",  alt=""></img>
+
 </div>
 {% endblock %}
