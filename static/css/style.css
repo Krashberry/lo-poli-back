@@ -6,9 +6,10 @@ body {
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   position: absolute;
   right: 0;
   top: 0;
+  padding: 5rem;
 }
