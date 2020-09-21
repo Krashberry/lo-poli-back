@@ -1,7 +1,7 @@
-// let showPic = document.getElementById("show_pics")
 // add refs for the image tags 
 let sknPic = document.getElementById("s_color_1")
 let sColor = document.getElementById("s_color")
+let eyesPic = document.getElementById("eyes_1")
 let eyes = document.getElementById("eyes")
 let eColor = document.getElementById("e_color")
 let nose = document.getElementById("nose")
@@ -16,23 +16,12 @@ let tBorder = document.getElementById("t_border")
 
 sColor.addEventListener("change", e => {
   let sColorElement = document.querySelector("#s_color").value
-  console.log(sColor.value)
-  if (sColorElement == "dark"){
-    sknPic.setAttribute("src", "../assets/tokens/skintones/dark.jpg")
-    console.log(sColor.value)
-  }
-  else if (sColorElement == "m_dark"){
-    sknPic.setAttribute("src", "../assets/tokens/skintones/m_dark.jpg")
-    console.log(sColor.value)
-  }
-  else if (sColorElement == "med"){
-    sknPic.setAttribute("src", "../assets/tokens/skintones/medium.jpg")
-    console.log(sColor.value)
-  }
+  sknPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${sColorElement}.jpg`)
 });
 
 eyes.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
+  let eyesElement = document.querySelector("#eyes").value
+  eyesPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${eyesElement}.jpg`)
 });
 
 eColor.addEventListener("change", e => {
