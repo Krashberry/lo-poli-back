@@ -26,14 +26,24 @@ let hair = document.getElementById("hair")
 let hColorPic = document.getElementById("h_color_1")
 let hColor = document.getElementById("h_color")
 
-let fhColorPic = document.getElementById("fhc_1")
-let fhColor = document.getElementById("fhc")
-
 let fHairPic = document.getElementById("f_hair_1")
 let fHair = document.getElementById("f_hair")
 
+let fhColorPic = document.getElementById("fhc_1")
+let fhColor = document.getElementById("fhc")
+
 let itemPic = document.getElementById("item_1")
 let item = document.getElementById("item")
+
+tColor.addEventListener("change", e => {
+  let tColorElement = document.querySelector("#t_color").value
+  tColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${tColorElement}.png`)   
+});
+
+tBorder.addEventListener("change", e => {
+  let tBorderElement = document.querySelector("#t_border").value
+  tBorderPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${tBorderElement}.png`)  
+});
 
 sColor.addEventListener("change", e => {
   let sColorElement = document.querySelector("#s_color").value
@@ -62,31 +72,28 @@ mouth.addEventListener("change", e => {
 
 hair.addEventListener("change", e => {
   let hairElement = document.querySelector("#hair").value
-  hairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hairElement}.jpg`)  
+  hairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hairElement}.png`)  
 });
 
 hColor.addEventListener("change", e => {
-  let hColorElement = document.querySelector("#eyes").value
-  hColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hColorElement}.jpg`)  
+  let hColorElement = document.querySelector("#h_color").value
+  hColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hColorElement}.png`)  
 });
 
 fHair.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
+  let fHairElement = document.querySelector("#f_hair").value
+  fHairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${fHairElement}.png`)    
 });
 
 fhColor.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
+  let fhColorElement = document.querySelector("#fhc").value
+  fhColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${fhColorElement}.png`)
 });
 
 item.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
+  let itemElement = document.querySelector("#item").value
+  itemPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${itemElement}.png`)   
 });
 
-tColor.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
-});
 
-tBorder.addEventListener("change", e => {
-  showPic.innerHTML = e.target.value  
-});
 
