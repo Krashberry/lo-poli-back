@@ -91,15 +91,15 @@
 
   <label for="hair">Hair</label><br>
   <select id="hair" name="hair"><br>
-    <option value="l_fro">Long Afro</option>
-    <option value="m_fro">Medium Afro</option>
     <option value="s_fro">Short Afro</option>
-    <option value="l_wav">Long Waves</option>
-    <option value="m_wav">Medium Waves</option>
+    <option value="m_fro">Medium Afro</option>
+    <option value="l_fro">Long Afro</option>
     <option value="s_wav">Short Waves</option>
-    <option value="l_str8">Long Straight</option>
-    <option value="m_str8">Medium Straight</option>
+    <option value="m_wav">Medium Waves</option>
+    <option value="l_wav">Long Waves</option>
     <option value="s_str8">Short Straight</option>
+    <option value="m_str8">Medium Straight</option>
+    <option value="l_str8">Long Straight</option>
     <option value="puf">Puffs</option>
     <option value="pig">Pigtails</option>
     <option value="dbl">Double Braids</option>
@@ -127,17 +127,18 @@
 
   <label for="facial_hair">Facial Hair</label><br>
   <select id="f_hair" name="facial_hair"><br>
+    <option value="null">None</option>
     <option value="full">Full</option>
     <option value="med">Medium</option>
     <option value="sm">Small</option>
     <option value="got">Goatee</option>
     <option value="must">Moustache</option>
     <option value="sp">Soul Patch</option>
-    <option value="null">None</option>
   </select><br>
 
   <label for="fh_color">Facial Hair Color</label><br>
   <select id="fhc" name="fh_color"><br>
+    <option value="null">None</option>
     <option value="black">Black</option>
     <option value="d-br">Dark Brown</option>
     <option value="br">Brown</option>
@@ -149,11 +150,11 @@
     <option value="hny-blnda">Honey Blonde</option>
     <option value="ash-blnda">Ashe Blonde</option>
     <option value="p-blnda">Platinum Blonde</option>
-    <option value="null">None</option>
   </select><br>
 
   <label for="item">Item</label><br>
   <select id="item" name="item"><br>
+    <option value="null">None</option>
     <option value="glas">Glasses</option>
     <option value="b_hat">Biking Hat</option>
     <option value="hoops">Hoops</option>
@@ -161,7 +162,6 @@
     <option value="sept">Septum Piercing</option>
     <option value="sweat">Sweat Drop</option>
     <option value="annoy">Annoyed Marker</option>
-    <option value="null">None</option>
   </select><br>
 
   <input type="submit" value="Submit">
@@ -188,11 +188,11 @@
 
   <img id="h_color_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/h_color/black.png",  alt=""></img>
   
-  <img id="f_hair_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/f_hair/dark.png",  alt=""></img>
+  <img id="f_hair_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/f_hair/none.png",  alt=""></img>
 
-  <img id="fhc_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/fhc/dark.png",  alt=""></img>
+  <img id="fhc_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/fhc/none.png",  alt=""></img>
 
-  <img id="item_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/item/dark.png",  alt=""></img>
+  <img id="item_1" src="https://lo-poli.s3-us-west-2.amazonaws.com/item/none.png",  alt=""></img>
 
 </div>
 {% endblock %}
