@@ -10,7 +10,7 @@ def home():
 @app.route('/tokens', methods=['GET', 'POST'])
 def token_create():
   if request.method == 'GET':
-    return render_template("token_creation.html", image="/static/js/m_light.png")
+    return render_template("token_creation.html", image="")
   if request.method == 'POST':
     return create_token(**request.form)
   

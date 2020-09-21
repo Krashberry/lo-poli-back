@@ -4,7 +4,7 @@ body {
   background-color: rgb(49, 49, 49);
   color: white;
   font-style: normal;
-  font-family: Futura;
+  font-family: 'Futura';
 }
 
 img {
@@ -13,5 +13,4 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 5rem;
 }
