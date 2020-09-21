@@ -3,6 +3,8 @@ body {
   grid-template-columns: minmax(150px, 25%) 1fr;
   background-color: rgb(49, 49, 49);
   color: white;
+  font-style: normal;
+  font-family: Futura;
 }
 
 img {
