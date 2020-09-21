@@ -37,62 +37,62 @@ let item = document.getElementById("item")
 
 tColor.addEventListener("change", e => {
   let tColorElement = document.querySelector("#t_color").value
-  tColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${tColorElement}.png`)   
+  tColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/t_color/${tColorElement}.png`)   
 });
 
 tBorder.addEventListener("change", e => {
   let tBorderElement = document.querySelector("#t_border").value
-  tBorderPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${tBorderElement}.png`)  
+  tBorderPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/t_border/${tBorderElement}.png`)  
 });
 
 sColor.addEventListener("change", e => {
   let sColorElement = document.querySelector("#s_color").value
-  sknPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${sColorElement}.png`)
+  sknPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/s_color/${sColorElement}.png`)
 });
 
 eyes.addEventListener("change", e => {
   let eyesElement = document.querySelector("#eyes").value
-  eyesPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${eyesElement}.png`)
+  eyesPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/eyes/${eyesElement}.png`)
 });
 
 eColor.addEventListener("change", e => {
   let eColorElement = document.querySelector("#e_color").value
-  eColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${eColorElement}.png`)  
+  eColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/e_color/${eColorElement}.png`)  
 });
 
 nose.addEventListener("change", e => {
   let noseElement = document.querySelector("#nose").value
-  nosePic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${noseElement}.png`)  
+  nosePic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/nose/${noseElement}.png`)  
 });
 
 mouth.addEventListener("change", e => {
   let mouthElement = document.querySelector("#mouth").value
-  mouthPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${mouthElement}.png`) 
+  mouthPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/mouth/${mouthElement}.png`) 
 });
 
 hair.addEventListener("change", e => {
   let hairElement = document.querySelector("#hair").value
-  hairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hairElement}.png`)  
+  hairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/hair/${hairElement}.png`)  
 });
 
 hColor.addEventListener("change", e => {
   let hColorElement = document.querySelector("#h_color").value
-  hColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${hColorElement}.png`)  
+  hColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/h_color/${hColorElement}.png`)  
 });
 
 fHair.addEventListener("change", e => {
   let fHairElement = document.querySelector("#f_hair").value
-  fHairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${fHairElement}.png`)    
+  fHairPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/f_hair/${fHairElement}.png`)    
 });
 
 fhColor.addEventListener("change", e => {
   let fhColorElement = document.querySelector("#fhc").value
-  fhColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${fhColorElement}.png`)
+  fhColorPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/fhc/${fhColorElement}.png`)
 });
 
 item.addEventListener("change", e => {
   let itemElement = document.querySelector("#item").value
-  itemPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/${itemElement}.png`)   
+  itemPic.setAttribute("src", `https://lo-poli.s3-us-west-2.amazonaws.com/item/${itemElement}.png`)   
 });
 
 
